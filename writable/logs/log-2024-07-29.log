@@ -1,0 +1,432 @@
+INFO - 2024-07-29 15:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 15:02:04 --> mysqli_sql_exception: Table 'invetory.tbl_usulan_barang' doesn't exist in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\inventory-sarpras\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\inventory-sarpras\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\inventory-sarpras\app\Controllers\UsulanBarang.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\UsulanBarang->index()
+#8 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+#9 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-29 15:02:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'invetory.tbl_usulan_barang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_usulan_barang`', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\UsulanBarang.php(20): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 15:02:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'invetory.tbl_usulan_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_usulan_barang`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_usulan_barang`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_usulan_barang`', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\UsulanBarang.php(20): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 15:02:04 --> [Caused by] mysqli_sql_exception: Table 'invetory.tbl_usulan_barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `tbl_usulan_barang`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_usulan_barang`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_usulan_barang`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_usulan_barang`', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\UsulanBarang.php(20): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 15:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:02:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 15:06:29 --> ErrorException: Undefined index: nama_lokasi
+in APPPATH\Views\admin\v_barang.php on line 45.
+ 1 APPPATH\Views\admin\v_barang.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_lokasi', 'C:\\laragon\\www\\inventory-sarpras\\app\\Views\\admin\\v_barang.php', 45, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\admin\\v_barang.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/v_barang', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('admin/v_barang')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(6): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\Barang.php(32): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 15:07:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 15:07:48 --> ErrorException: Undefined index: nama_lokasi
+in APPPATH\Views\admin\v_barang.php on line 142.
+ 1 APPPATH\Views\admin\v_barang.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_lokasi', 'C:\\laragon\\www\\inventory-sarpras\\app\\Views\\admin\\v_barang.php', 142, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\admin\\v_barang.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/v_barang', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('admin/v_barang')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(6): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\Barang.php(32): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 15:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 15:08:01 --> ErrorException: Undefined index: nama_lokasi
+in APPPATH\Views\admin\v_barang.php on line 142.
+ 1 APPPATH\Views\admin\v_barang.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_lokasi', 'C:\\laragon\\www\\inventory-sarpras\\app\\Views\\admin\\v_barang.php', 142, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\admin\\v_barang.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/v_barang', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('admin/v_barang')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(6): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\Barang.php(32): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 15:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 15:09:14 --> ErrorException: Illegal string offset 'id_barang'
+in APPPATH\Models\ModelBarang.php on line 29.
+ 1 APPPATH\Models\ModelBarang.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_barang\'', 'C:\\laragon\\www\\inventory-sarpras\\app\\Models\\ModelBarang.php', 29, [...])
+ 2 APPPATH\Controllers\Barang.php(58): App\Models\ModelBarang->edit('1', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->edit('1')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 15:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 15:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 16:28:06 --> mysqli_sql_exception: Column 'id_pengusul' cannot be null in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\inventory-sarpras\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\inventory-sarpras\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\inventory-sarpras\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\inventory-sarpras\app\Models\ModelUsulanBarang.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\inventory-sarpras\app\Controllers\UsulanBarang.php(38): App\Models\ModelUsulanBarang->add(Array)
+#9 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\UsulanBarang->add()
+#10 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+#11 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-29 16:28:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_pengusul' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (:id_pengusul:, :namaBarang:, :jmlBarang:, :kiraHarga:, :jmlHarga:, :keperluan:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\ModelUsulanBarang.php(23): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\UsulanBarang.php(38): App\Models\ModelUsulanBarang->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->add()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 16:28:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_pengusul' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'kelengkapan kelas\', \'0\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'kelengkapan kelas\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (:id_pengusul:, :namaBarang:, :jmlBarang:, :kiraHarga:, :jmlHarga:, :keperluan:, :status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\ModelUsulanBarang.php(23): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\UsulanBarang.php(38): App\Models\ModelUsulanBarang->add([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->add()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 16:28:07 --> [Caused by] mysqli_sql_exception: Column 'id_pengusul' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'kelengkapan kelas\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'kelengkapan kelas\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'kelengkapan kelas\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (:id_pengusul:, :namaBarang:, :jmlBarang:, :kiraHarga:, :jmlHarga:, :keperluan:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ModelUsulanBarang.php(23): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\UsulanBarang.php(38): App\Models\ModelUsulanBarang->add([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->add()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 16:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 16:32:54 --> mysqli_sql_exception: Column 'id_pengusul' cannot be null in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\inventory-sarpras\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\inventory-sarpras\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\inventory-sarpras\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\inventory-sarpras\app\Models\ModelUsulanBarang.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\inventory-sarpras\app\Controllers\UsulanBarang.php(37): App\Models\ModelUsulanBarang->add(Array)
+#9 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\UsulanBarang->add()
+#10 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+#11 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-29 16:32:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_pengusul' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (:id_pengusul:, :namaBarang:, :jmlBarang:, :kiraHarga:, :jmlHarga:, :keperluan:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\ModelUsulanBarang.php(23): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\UsulanBarang.php(37): App\Models\ModelUsulanBarang->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->add()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 16:32:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_pengusul' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'kelengkapan kelas\', \'0\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'kelengkapan kelas\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (:id_pengusul:, :namaBarang:, :jmlBarang:, :kiraHarga:, :jmlHarga:, :keperluan:, :status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\ModelUsulanBarang.php(23): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\UsulanBarang.php(37): App\Models\ModelUsulanBarang->add([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->add()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 16:32:54 --> [Caused by] mysqli_sql_exception: Column 'id_pengusul' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'kelengkapan kelas\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'kelengkapan kelas\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'kelengkapan kelas\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (:id_pengusul:, :namaBarang:, :jmlBarang:, :kiraHarga:, :jmlHarga:, :keperluan:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ModelUsulanBarang.php(23): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\UsulanBarang.php(37): App\Models\ModelUsulanBarang->add([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->add()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 16:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 16:33:11 --> Error: Call to undefined function form_open()
+in APPPATH\Views\admin\v_usulan_barang.php on line 99.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/v_usulan_barang', [], true)
+ 4 APPPATH\Controllers\UsulanBarang.php(22): view('admin/v_usulan_barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 16:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 16:33:24 --> Error: Call to undefined function form_open()
+in APPPATH\Views\admin\v_usulan_barang.php on line 99.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/v_usulan_barang', [], true)
+ 4 APPPATH\Controllers\UsulanBarang.php(22): view('admin/v_usulan_barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 16:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 16:34:54 --> Error: Call to undefined function form_open()
+in APPPATH\Views\admin\v_usulan_barang.php on line 99.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/v_usulan_barang', [], true)
+ 4 APPPATH\Controllers\UsulanBarang.php(22): view('admin/v_usulan_barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 16:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 16:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-29 16:41:46 --> mysqli_sql_exception: Column 'id_pengusul' cannot be null in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\laragon\www\inventory-sarpras\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\inventory-sarpras\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\inventory-sarpras\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\inventory-sarpras\app\Models\ModelUsulanBarang.php(23): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\inventory-sarpras\app\Controllers\UsulanBarang.php(38): App\Models\ModelUsulanBarang->add(Array)
+#9 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\UsulanBarang->add()
+#10 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+#11 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-29 16:41:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_pengusul' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (:id_pengusul:, :namaBarang:, :jmlBarang:, :kiraHarga:, :jmlHarga:, :keperluan:, :status:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\ModelUsulanBarang.php(23): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\UsulanBarang.php(38): App\Models\ModelUsulanBarang->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->add()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 16:41:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_pengusul' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'perlrngkapan kelas\', \'0\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'perlrngkapan kelas\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (:id_pengusul:, :namaBarang:, :jmlBarang:, :kiraHarga:, :jmlHarga:, :keperluan:, :status:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\ModelUsulanBarang.php(23): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\UsulanBarang.php(38): App\Models\ModelUsulanBarang->add([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->add()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-29 16:41:47 --> [Caused by] mysqli_sql_exception: Column 'id_pengusul' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'perlrngkapan kelas\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'perlrngkapan kelas\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (NULL, \'kursi\', \'12\', \'100000\', \'1200000.00\', \'perlrngkapan kelas\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_usulan` (`id_pengusul`, `namaBarang`, `jmlBarang`, `kiraHarga`, `jmlHarga`, `keperluan`, `status`) VALUES (:id_pengusul:, :namaBarang:, :jmlBarang:, :kiraHarga:, :jmlHarga:, :keperluan:, :status:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ModelUsulanBarang.php(23): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\UsulanBarang.php(38): App\Models\ModelUsulanBarang->add([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->add()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 17:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:06:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:07:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-29 17:19:53 --> ErrorException: Undefined variable: status
+in APPPATH\Views\admin\v_usulan_barang.php on line 47.
+ 1 APPPATH\Views\admin\v_usulan_barang.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: status', 'C:\\laragon\\www\\inventory-sarpras\\app\\Views\\admin\\v_usulan_barang.php', 47, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\admin\\v_usulan_barang.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/v_usulan_barang', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('admin/v_usulan_barang')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(6): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\UsulanBarang.php(24): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\UsulanBarang->index()
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsulanBarang))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-29 17:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:25:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-29 17:25:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
