@@ -1,0 +1,462 @@
+INFO - 2024-07-27 02:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 03:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 03:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-27 03:21:57 --> mysqli_sql_exception: Table 'invetory.users' doesn't exist in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\inventory-sarpras\app\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\inventory-sarpras\app\Controllers\Auth.php(64): App\Models\ModelAuth->login_user('admin', 'admin')
+#6 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+#7 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-27 03:21:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'invetory.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 2 APPPATH\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Auth.php(64): App\Models\ModelAuth->login_user('admin', 'admin')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 03:21:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'invetory.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 4 APPPATH\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Auth.php(64): App\Models\ModelAuth->login_user('admin', 'admin')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 03:21:57 --> [Caused by] mysqli_sql_exception: Table 'invetory.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 5 APPPATH\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(64): App\Models\ModelAuth->login_user('admin', 'admin')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-27 03:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 03:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 03:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-27 03:24:03 --> mysqli_sql_exception: Table 'invetory.users' doesn't exist in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\inventory-sarpras\app\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\inventory-sarpras\app\Controllers\Auth.php(64): App\Models\ModelAuth->login_user('admin', 'admin')
+#6 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+#7 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-27 03:24:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'invetory.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 2 APPPATH\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Auth.php(64): App\Models\ModelAuth->login_user('admin', 'admin')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 03:24:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'invetory.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 4 APPPATH\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Auth.php(64): App\Models\ModelAuth->login_user('admin', 'admin')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 03:24:03 --> [Caused by] mysqli_sql_exception: Table 'invetory.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 5 APPPATH\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(64): App\Models\ModelAuth->login_user('admin', 'admin')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-27 13:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 13:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-27 13:37:04 --> mysqli_sql_exception: Table 'invetory.users' doesn't exist in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\inventory-sarpras\app\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\inventory-sarpras\app\Controllers\Auth.php(64): App\Models\ModelAuth->login_user('admin', 'admin')
+#6 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+#7 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-27 13:37:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'invetory.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 2 APPPATH\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Auth.php(64): App\Models\ModelAuth->login_user('admin', 'admin')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 13:37:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'invetory.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 4 APPPATH\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Auth.php(64): App\Models\ModelAuth->login_user('admin', 'admin')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 13:37:04 --> [Caused by] mysqli_sql_exception: Table 'invetory.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'admin\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 5 APPPATH\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Auth.php(64): App\Models\ModelAuth->login_user('admin', 'admin')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-27 13:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 13:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 13:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 13:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 13:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 14:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 14:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 14:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 14:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 14:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 14:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 14:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 14:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 14:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 14:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 14:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 15:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 15:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 15:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 15:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 15:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 15:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 16:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 16:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-27 16:22:15 --> mysqli_sql_exception: Unknown column 'tbl_lokasi.nama_lokasi' in 'field list' in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_bar...', 0)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_bar...')
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_bar...')
+#3 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_bar...', Array, false)
+#4 C:\laragon\www\inventory-sarpras\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\inventory-sarpras\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\inventory-sarpras\app\Models\ModelBarang.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\inventory-sarpras\app\Controllers\Barang.php(27): App\Models\ModelBarang->allData()
+#8 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\Barang->index()
+#9 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#10 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-27 16:22:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_lokasi.nama_lokasi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_barang`.*, `tbl_kategori`.`nama_kategori`, `tbl_lokasi`.`nama_lokasi`
+FROM `tbl_barang`
+JOIN `tbl_kategori` ON `tbl_kategori`.`id_kategori` = `tbl_barang`.`id_kategori`
+JOIN `tbl_lokasi` ON `tbl_lokasi`.`id_lokasi` = `tbl_barang`.`id_lokasi`
+ORDER BY `id_barang` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ModelBarang.php(19): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Barang.php(27): App\Models\ModelBarang->allData()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 16:22:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_lokasi.nama_lokasi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_barang`.*, `tbl_kategori`.`nama_kategori`, `tbl_lokasi`.`nama_lokasi`
+FROM `tbl_barang`
+JOIN `tbl_kategori` ON `tbl_kategori`.`id_kategori` = `tbl_barang`.`id_kategori`
+JOIN `tbl_lokasi` ON `tbl_lokasi`.`id_lokasi` = `tbl_barang`.`id_lokasi`
+ORDER BY `id_barang` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_barang`.*, `tbl_kategori`.`nama_kategori`, `tbl_lokasi`.`nama_lokasi`
+FROM `tbl_barang`
+JOIN `tbl_kategori` ON `tbl_kategori`.`id_kategori` = `tbl_barang`.`id_kategori`
+JOIN `tbl_lokasi` ON `tbl_lokasi`.`id_lokasi` = `tbl_barang`.`id_lokasi`
+ORDER BY `id_barang` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_barang`.*, `tbl_kategori`.`nama_kategori`, `tbl_lokasi`.`nama_lokasi`
+FROM `tbl_barang`
+JOIN `tbl_kategori` ON `tbl_kategori`.`id_kategori` = `tbl_barang`.`id_kategori`
+JOIN `tbl_lokasi` ON `tbl_lokasi`.`id_lokasi` = `tbl_barang`.`id_lokasi`
+ORDER BY `id_barang` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ModelBarang.php(19): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Barang.php(27): App\Models\ModelBarang->allData()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 16:22:15 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_lokasi.nama_lokasi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_barang`.*, `tbl_kategori`.`nama_kategori`, `tbl_lokasi`.`nama_lokasi`
+FROM `tbl_barang`
+JOIN `tbl_kategori` ON `tbl_kategori`.`id_kategori` = `tbl_barang`.`id_kategori`
+JOIN `tbl_lokasi` ON `tbl_lokasi`.`id_lokasi` = `tbl_barang`.`id_lokasi`
+ORDER BY `id_barang` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_barang`.*, `tbl_kategori`.`nama_kategori`, `tbl_lokasi`.`nama_lokasi`
+FROM `tbl_barang`
+JOIN `tbl_kategori` ON `tbl_kategori`.`id_kategori` = `tbl_barang`.`id_kategori`
+JOIN `tbl_lokasi` ON `tbl_lokasi`.`id_lokasi` = `tbl_barang`.`id_lokasi`
+ORDER BY `id_barang` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_barang`.*, `tbl_kategori`.`nama_kategori`, `tbl_lokasi`.`nama_lokasi`
+FROM `tbl_barang`
+JOIN `tbl_kategori` ON `tbl_kategori`.`id_kategori` = `tbl_barang`.`id_kategori`
+JOIN `tbl_lokasi` ON `tbl_lokasi`.`id_lokasi` = `tbl_barang`.`id_lokasi`
+ORDER BY `id_barang` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_barang`.*, `tbl_kategori`.`nama_kategori`, `tbl_lokasi`.`nama_lokasi`
+FROM `tbl_barang`
+JOIN `tbl_kategori` ON `tbl_kategori`.`id_kategori` = `tbl_barang`.`id_kategori`
+JOIN `tbl_lokasi` ON `tbl_lokasi`.`id_lokasi` = `tbl_barang`.`id_lokasi`
+ORDER BY `id_barang` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ModelBarang.php(19): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Barang.php(27): App\Models\ModelBarang->allData()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-27 16:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-27 16:28:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('barang/index', [], true)
+ 3 APPPATH\Views\layout\v_content.php(3): view('barang/index')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_content.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 7 APPPATH\Views\layout\v_wrapper.php(6): view('layout/v_content')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_wrapper.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+11 APPPATH\Controllers\Barang.php(32): view('layout/v_wrapper', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-27 16:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-27 16:38:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('barang/index', [], true)
+ 3 APPPATH\Views\layout\v_content.php(3): view('barang/index')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_content.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 7 APPPATH\Views\layout\v_wrapper.php(6): view('layout/v_content')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_wrapper.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+11 APPPATH\Controllers\Barang.php(32): view('layout/v_wrapper', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-27 16:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 16:39:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-27 16:39:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "barang/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('barang/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('barang/index', [], true)
+ 3 APPPATH\Views\layout\v_content.php(3): view('barang/index')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_content.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 7 APPPATH\Views\layout\v_wrapper.php(6): view('layout/v_content')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_wrapper.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+11 APPPATH\Controllers\Barang.php(32): view('layout/v_wrapper', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-27 16:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-27 16:43:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/barang.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/barang.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/barang', [], true)
+ 3 APPPATH\Views\layout\v_content.php(3): view('admin/barang')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_content.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 7 APPPATH\Views\layout\v_wrapper.php(6): view('layout/v_content')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_wrapper.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+11 APPPATH\Controllers\Barang.php(32): view('layout/v_wrapper', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-27 16:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-27 16:43:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/barang.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/barang.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/barang', [], true)
+ 3 APPPATH\Views\layout\v_content.php(3): view('admin/barang')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_content.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 7 APPPATH\Views\layout\v_wrapper.php(6): view('layout/v_content')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_wrapper.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+11 APPPATH\Controllers\Barang.php(32): view('layout/v_wrapper', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-27 16:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-27 16:46:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/barang.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/barang.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/barang', [], true)
+ 3 APPPATH\Views\layout\v_content.php(3): view('admin/barang')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_content.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 7 APPPATH\Views\layout\v_wrapper.php(6): view('layout/v_content')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_wrapper.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+11 APPPATH\Controllers\Barang.php(32): view('layout/v_wrapper', [...])
+12 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-27 16:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-27 16:47:23 --> ErrorException: Undefined index: nama_lokasi
+in APPPATH\Views\admin\v_barang.php on line 93.
+ 1 APPPATH\Views\admin\v_barang.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_lokasi', 'C:\\laragon\\www\\inventory-sarpras\\app\\Views\\admin\\v_barang.php', 93, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\admin\\v_barang.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin/v_barang', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('admin/v_barang')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(6): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\inventory-sarpras\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\Barang.php(32): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Barang->index()
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-27 16:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 16:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 16:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 16:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 16:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 16:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 16:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 16:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-27 16:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

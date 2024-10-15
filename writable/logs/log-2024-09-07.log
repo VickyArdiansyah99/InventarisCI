@@ -1,0 +1,149 @@
+INFO - 2024-09-07 07:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-07 07:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-07 07:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-07 07:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-07 07:37:02 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'invetory', 3306, '', 0)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\inventory-sarpras\app\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\inventory-sarpras\app\Controllers\Auth.php(54): App\Models\ModelAuth->login_user('admin', 'admin')
+#6 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+#7 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory-sarpras\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\inventory-sarpras\app\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\inventory-sarpras\app\Controllers\Auth.php(54): App\Models\ModelAuth->login_user('admin', 'admin')
+#5 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+#6 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\inventory-sarpras\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-09-07 07:37:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(54): App\Models\ModelAuth->login_user('admin', 'admin')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\inventory-sarpras\\public\\index.php')
+ERROR - 2024-09-07 07:37:57 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'invetory', 3306, '', 0)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\inventory-sarpras\app\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\inventory-sarpras\app\Controllers\Auth.php(54): App\Models\ModelAuth->login_user('admin', 'admin')
+#6 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+#7 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory-sarpras\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\inventory-sarpras\app\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\inventory-sarpras\app\Controllers\Auth.php(54): App\Models\ModelAuth->login_user('admin', 'admin')
+#5 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+#6 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\inventory-sarpras\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-09-07 07:37:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(54): App\Models\ModelAuth->login_user('admin', 'admin')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\inventory-sarpras\\public\\index.php')
+ERROR - 2024-09-07 07:38:12 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'invetory', 3306, '', 0)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\inventory-sarpras\app\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\inventory-sarpras\app\Controllers\Auth.php(54): App\Models\ModelAuth->login_user('admin', 'admin')
+#6 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+#7 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\inventory-sarpras\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\laragon\www\inventory-sarpras\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\inventory-sarpras\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\inventory-sarpras\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\inventory-sarpras\app\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\inventory-sarpras\app\Controllers\Auth.php(54): App\Models\ModelAuth->login_user('admin', 'admin')
+#5 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+#6 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\laragon\www\inventory-sarpras\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\inventory-sarpras\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\inventory-sarpras\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2024-09-07 07:38:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\ModelAuth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(54): App\Models\ModelAuth->login_user('admin', 'admin')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Auth->cek_login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\inventory-sarpras\\public\\index.php')
+INFO - 2024-09-07 07:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-07 07:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-07 07:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-07 07:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-07 07:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-07 07:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-07 07:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
